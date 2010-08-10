@@ -17,8 +17,8 @@ some scratch paper.
 
 Oh no! The very hungry caterpillar, after eating through the above branches
 you so expertly helped him navigate through, has fallen below to an even larger
-branch. He needs your help gain. This time, can you find the total amount of
-food the very hungry caterpillar will have eaten if he follows the optimal
+branch. He needs your help gain. This time, can you find the total number of
+leaves the very hungry caterpillar will have eaten if he follows the optimal
 path? You might want to write a simple brute force Ruby program to help you.
 
                                 75 <--- start here
@@ -42,8 +42,8 @@ tree to the biggest set of branches he's ever seen in his short, and very
 hungry, life. He's going to really need help now if he hopes to eat is way
 through the most efficient path here. It's time for another Ruby program, only
 this time it will have to make use of a good A* algorithm, otherwise it won't
-complete before the very hungry caterpillar has to make his cocoon. How much
-food will the very hungry caterpillar have eaten by the time he's done eating
+complete before the very hungry caterpillar has to make his cocoon. How many
+leaves will the very hungry caterpillar have eaten by the time he's done with
 this set of branches?
 
 You can find the final set of branches in `branches3.json`. You will also find
