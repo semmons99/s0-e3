@@ -12,6 +12,14 @@
 #   3 -> 4 -> 6 -> 3 = 16
 
 ###############################################################################
+# PART 2                                                                      #
+###############################################################################
+# Here we use a brute force approach. We start at the top and nibble our way
+# down. Once we find all possible solutions, we report the one which will make
+# our friend, the very hungry caterpillar, the fullest.
+branches = eval(File.read('branches2.txt'))
+
+###############################################################################
 # PART 3                                                                      #
 ###############################################################################
 # This set of branches is so large that the very hungry caterpillar will have
@@ -26,4 +34,4 @@ branches = eval(File.read('branches3.json'))
   end
 end
 
-puts "The very very hungry caterpillar will eat #{branches[0][0]} leaves!"
+puts "He ate #{branches[0][0]} leaves on the third set of branches!"
