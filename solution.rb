@@ -18,7 +18,21 @@ puts "He ate 23 leaves on the first set of branches!"
 # Here we use a brute force approach. We start at the top and nibble our way
 # down. Once we find all possible solutions, we report the one which will make
 # our friend, the very hungry caterpillar, the fullest.
-branches = eval(File.read('branches2.txt'))
+@branches = eval(File.read('branches2.json'))
+@paths    = []
+
+def eat(row, col, eaten)
+  if row+1 == @branches.length
+    @paths << eaten
+  else
+    eat(row+1, col, eaten+@branches[row+1][col])
+    eat(row+1, col+1, eaten+@branches[row+1][col+1])
+  end
+end
+
+eat(0, 0, @branches[0][0])
+
+puts "He ate #{@paths.max} leaves on the second set of branches!"
 
 ###############################################################################
 # PART 3                                                                      #
