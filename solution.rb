@@ -10,6 +10,7 @@
 #   3 -> 4 -> 4 -> 9 = 20      caterpillar the
 #   3 -> 4 -> 6 -> 9 = 22      most food!!!
 #   3 -> 4 -> 6 -> 3 = 16
+puts "He ate 23 leaves on the first set of branches!"
 
 ###############################################################################
 # PART 2                                                                      #
