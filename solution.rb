@@ -41,12 +41,12 @@ puts "He ate #{@paths.max} leaves on the second set of branches!"
 # starved or turned into a butterfly before our code from part 2 found the
 # solution. So instead we'll take a novel approach and start from the bottom
 # and go up, discarding the path's that don't make our friend the fattest!
-branches = eval(File.read('branches3.json'))
+@branches = eval(File.read('branches3.json'))
 
-(branches.length-2).downto(0) do |row|
-  branches[row].each_with_index do |val, i|
-    branches[row][i] += [branches[row+1][i], branches[row+1][i+1]].max
+(@branches.length-2).downto(0) do |row|
+  @branches[row].each_with_index do |val, i|
+    @branches[row][i] += [@branches[row+1][i], @branches[row+1][i+1]].max
   end
 end
 
-puts "He ate #{branches[0][0]} leaves on the third set of branches!"
+puts "He ate #{@branches[0][0]} leaves on the third set of branches!"
