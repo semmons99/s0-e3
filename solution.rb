@@ -1,6 +1,9 @@
 ###############################################################################
 # PART 1                                                                      #
 ###############################################################################
+# For this we'll write out by hand all the possible paths the very hungry
+# caterpillar can take and find the best.
+#
 # Possible paths:
 #   3 -> 7 -> 2 -> 8 = 20
 #   3 -> 7 -> 2 -> 5 = 17
