@@ -46,6 +46,9 @@ complete before the very hungry caterpillar has to make his cocoon. How many
 leaves will the very hungry caterpillar have eaten by the time he's done with
 this set of branches?
 
+Branches Files
+==============
+
 You can find the final set of branches in `branches3.json`. You will also find
 the first two sets of branches in `branches1.json` and `branches2.json`. Two
 options for reading these files into you program are shown below.
