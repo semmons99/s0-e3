@@ -5,7 +5,7 @@ The very hungry caterpillar is very hungry (I know, surprising). He is sitting
 on a branch contemplating how to eat the most leaves without having to turn
 around (he's kind of lazy too). After eating all the leaves on the current
 branch he is on, he can look ahead and see the next two branches and how many
-leaves they each have, before picking on an moving along. Given the branches
+leaves they each have, before picking one and moving along. Given the branches
 below, can you help the very hungry caterpillar find the path which will allow
 him to eat the most leaves? You should be able to do this in your head or on
 some scratch paper.
@@ -39,7 +39,7 @@ path? You might want to write a simple brute force Ruby program to help you.
 
 He's done it again. That silly caterpillar has fallen even further down to the
 tree to the biggest set of branches he's ever seen in his short, and very
-hungry, life. He's going to really need help now if he hopes to eat is way
+hungry, life. He's going to really need help now if he hopes to eat his way
 through the most efficient path here. It's time for another Ruby program, only
 this time it will have to make use of a good A* algorithm, otherwise it won't
 complete before the very hungry caterpillar has to make his cocoon. How many
