@@ -21,7 +21,8 @@ puts "He ate 23 leaves on the first set of branches!"
 # Here we use a brute force approach. We start at the top and nibble our way
 # down. Once we find all possible solutions, we report the one which will make
 # our friend, the very hungry caterpillar, the fullest.
-@branches = eval(File.read('branches2.json'))
+require 'json'
+@branches = JSON.parse(File.read('branches2.json'))
 @paths    = []
 
 def eat(row, col, eaten)
@@ -44,7 +45,8 @@ puts "He ate #{@paths.max} leaves on the second set of branches!"
 # starved or turned into a butterfly before our code from part 2 found the
 # solution. So instead we'll take a novel approach and start from the bottom
 # and go up, discarding the path's that don't make our friend the fattest!
-@branches = eval(File.read('branches3.json'))
+require 'json'
+@branches = JSON.parse(File.read('branches3.json'))
 
 (@branches.length-2).downto(0) do |row|
   @branches[row].each_with_index do |val, i|

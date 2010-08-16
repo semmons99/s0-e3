@@ -50,14 +50,8 @@ Branches Files
 ==============
 
 You can find the final set of branches in `branches3.json`. You will also find
-the first two sets of branches in `branches1.json` and `branches2.json`. Two
-options for reading these files into you program are shown below.
+the first two sets of branches in `branches1.json` and `branches2.json`. You
+can load the branches files using the code below.
 
-Example 1 (using `JSON`)
-------------------------
     require 'json'
     branches = JSON.parse(File.read('branches1.json'))
-
-Example 2 (using `#eval`)
--------------------------
-    branches = eval(File.read('branches1.json'))
